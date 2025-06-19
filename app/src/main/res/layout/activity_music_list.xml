@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/download__2_"
+    tools:context=".MusicList">
+
+    <Button
+        android:id="@+id/allDetailsButton"
+        android:layout_width="363dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="28dp"
+        android:text="Next"
+        app:layout_constraintBottom_toTopOf="@+id/exitButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="358dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="60dp"
+        android:text="Exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/addSongButton"
+        android:layout_width="350dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginEnd="169dp"
+        android:layout_marginBottom="47dp"
+        android:text="Add To Playlist"
+        app:layout_constraintBottom_toTopOf="@+id/allDetailsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/musicRecommendEditText"
+        android:layout_width="315dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="174dp"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Songs Name"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/artistNameEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <EditText
+        android:id="@+id/artistNameEditText"
+        android:layout_width="318dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Artist Name"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/ratingEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/ratingEditText"
+        android:layout_width="315dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Rating "
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/musicCommentEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/musicCommentEditText"
+        android:layout_width="320dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginBottom="64dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Comment"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/addSongButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

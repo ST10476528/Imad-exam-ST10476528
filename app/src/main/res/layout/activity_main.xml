@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/music_color_wall_quote_wall_saying_music_wall_art_music_by_prrint"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="168dp"
+        android:layout_height="102dp"
+        android:fontFamily="@font/racing_sans_one"
+        android:text="Funky"
+        android:textColor="#FD0B0B"
+        android:textColorLink="#F0ADAD"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="352dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="84dp"
+        android:text="Start"
+        android:textColor="#4B0EE6"
+        android:textSize="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/exitButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="349dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="28dp"
+        android:text="Exit"
+        android:textColor="#E41717"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
